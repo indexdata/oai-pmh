@@ -1,5 +1,3 @@
-// Use with cors-anywhere'd OAI-PMH repo such as http://localhost:8081/https://ora.ox.ac.uk/oai2
-
 import ky from 'ky';
 import { parseStringPromise } from 'xml2js';
 
