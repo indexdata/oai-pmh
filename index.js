@@ -25,8 +25,15 @@ export default class OaiPmh {
   }
 
   async listSets() {
-    // XXX we do not support resumptionToken
+    // XXX we do not support the optional `resumptionToken` argument
     const xml = await ky.get(`${this.baseUrl}?verb=ListSets`).text();
+    const json = await convertToJson(xml);
+    return json;
+  }
+
+  async listMetadataFormats() {
+    // XXX we do not support the optional `identifier` argument
+    const xml = await ky.get(`${this.baseUrl}?verb=ListMetadataFormats`).text();
     const json = await convertToJson(xml);
     return json;
   }
