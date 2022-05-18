@@ -6,8 +6,8 @@ async function convertToJson(xml) {
   const res = obj['OAI-PMH'];
   if (res === undefined) {
     throw new Error('not an OAI-PMH response');
-  } else if (res.responseDate) {
-    throw new Error('OAI-PMH error: ' + JSON.stringify(res.responseDate));
+  } else if (res.error) {
+    throw new Error('OAI-PMH error: ' + JSON.stringify(res.error));
   }
   return JSON.stringify(res, null, 2);
 }
