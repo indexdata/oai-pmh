@@ -9,7 +9,7 @@ async function convertToJson(xml) {
   } else if (res.error) {
     throw new Error(`OAI-PMH error: ${JSON.stringify(res.error)}`);
   }
-  return JSON.stringify(res, null, 2);
+  return res;
 }
 
 export default class OaiPmh {
