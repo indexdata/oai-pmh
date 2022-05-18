@@ -1,0 +1,19 @@
+{
+  "name": "@indexdata/oai-pmh",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ky": "^0.30.0",
+    "timers": "^0.1.1",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "lint": "eslint -f unix .",
+    "qlint": "eslint -f unix  --rule '{\"no-console\":\"off\"}' ."
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
