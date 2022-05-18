@@ -23,4 +23,11 @@ export default class OaiPmh {
     const json = await convertToJson(xml);
     return json;
   }
+
+  async listSets() {
+    // XXX we do not support resumptionToken
+    const xml = await ky.get(`${this.baseUrl}?verb=ListSets`).text();
+    const json = await convertToJson(xml);
+    return json;
+  }
 }
