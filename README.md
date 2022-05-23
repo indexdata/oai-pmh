@@ -44,7 +44,7 @@ See the [very simple example code](example.js).
 
 ## Note on dependencies
 
-The package file includes a dependency on `timers` even though we don't use that package directly. This is because the `xml2js` library needs it but doesn't have a dependency, probaby because it's relying on the behavior of Babel before v5.x which used to polyfill various node.js core modules.
+The package file includes a dependencies on `timers` and `stream` even though we don't use those packages directly. This is because the `xml2js` library needs them but doesn't have dependencies, probably because it's relying on the behavior of Babel before v5.x which used to polyfill various node.js core modules.
 
 
 ## Of CORS security is an issue
