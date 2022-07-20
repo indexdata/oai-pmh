@@ -11,7 +11,7 @@ This is a very simple
 [OAI-PMH](https://www.openarchives.org/OAI/openarchivesprotocol.html)
 client library, written because
 [all the various existing libraries known to Node](https://www.npmjs.com/search?q=oai-pmh)
-are abadonware or undocumented.
+are abandonware or undocumented.
 
 It exists primarily for the use of
 [`ui-harvester-admin`](https://github.com/indexdata/ui-harvester-admin)
@@ -49,7 +49,7 @@ The package file includes a dependencies on `timers` and `stream` even though we
 
 ## Of CORS security is an issue
 
-Understandably, when a browser loads the FOLIO SPA from one origin, it's unhappy about letting that SPA make OIA-PMH requests (or any HTTP requests) to other origins. We will need to figure out a way to address this in production, but for development is suffices to use the
+Understandably, when a browser loads the FOLIO SPA from one origin, it's unhappy about letting that SPA make OAI-PMH requests (or any HTTP requests) to other origins. We will need to figure out a way to address this in production, but for development it suffices to use the
 [`local-cors-anywhere`](https://github.com/dkaoster/local-cors-anywhere)
 web proxy. Install globally with
 `yarn global add local-cors-anywhere`
